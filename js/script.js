@@ -32,18 +32,17 @@ $(document).ready(function() {
 			console.log(n);
 			if (n > 16) {
 				console.log("hello");
+				$('.other-side').css({"background":"white"});
+				$('.one-side').css({"background":"white"});
+				$('nav').css({"background":"white"});
+				$('body').css({"background":"black"});
+
+				$('.project-count').css({"color":"white"});
+				$('#getting-started').css({"color":"white"});
+				$('#nightmode').css({"color":"white"});
 			}
 
 
-
-			$('.other-side').css({"background":"white"});
-			$('.one-side').css({"background":"white"});
-			$('nav').css({"background":"white"});
-			$('body').css({"background":"black"});
-
-			$('.project-count').css({"color":"white"});
-			$('#getting-started').css({"color":"white"});
-			$('#nightmode').css({"color":"white"});
 
 
 
