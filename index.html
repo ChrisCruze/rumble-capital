@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css" />
-
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/load.css" />
     <link rel="stylesheet" href="css/loader.css" />
     <link rel="stylesheet" href="css/butterfly.css" />
@@ -135,41 +135,7 @@
 
  <h1 class="rumble-title">Rumble Capital</h1>
 
-            <input
-              placeholder="Enter email here for exclusive product drops"
-              id="email_input"
-              style="
-                              text-align: center;
-
-                              display: block;
-                              margin: 0 auto;
-                              width: 50%;
-                              border-radius: 10px;
-                              border: 5;
-                              border-color:transparent;
-
-                          "
-            />
-            <button
-              id="email_button"
-              class="hvr-buzz"
-              style="
-                            display: block;
-                            margin: 0 auto;
-                            margin-top: 18px;
-                            font-weight: 700;
-                            font-size: 16px;
-                            padding: 9px;
-
-                            line-height: 0;
-                            height: 30px;
-                            background: #45bf15;
-                            color: white !important;
-                            letter-spacing: 2px;
-                        "
-            >
-              Rumble
-            </button>
+   <a href="javascript:;" id="push-btn" class="btn btn-lg btn-white" data-toggle="modal" data-target="#modalLoginForm">PUSH</a>
 
             <p class="sub-text"></p>
 
@@ -1052,7 +1018,7 @@
                 <div class="content">
                   <h2>Cruz Realty</h2>
                   <p>
-                    Properties near the waterfront are vastly undervalued. This partnership will seize the opportunities at hand. 
+                    Properties near the waterfront are vastly undervalued. This partnership will seize the opportunities at hand.
                   </p>
                 </div>
               </a>
@@ -1210,6 +1176,41 @@
       </footer>
 
 
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h2 class="modal-title w-100 font-weight-bold"></h2>
+              <img id="hook" class="logo" src="img/rilla-transparent.png" alt="logo">
+              <h4 class="modal-subtitle w-100 font-weight-bold"></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form method="POST" id="signup-form">
+        <div class="modal-body mx-3">
+          <div class="md-form mb-5">
+            <input type="email" required="" id="email" placeholder="Enter email for project updates" class="form-control validate">
+            <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+          </div>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button id="push" class="btn btn-default">Sign up</button>
+        </div>
+
+
+      </form>
+
+
+    </div>
+
+
+  </div>
+</div>
+
+
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -1257,6 +1258,8 @@
 
 
     <script src="./js/update_project_counts.js"></script>
+        <script src="./js/secret.js"></script>
+
 
 
     <script src="https://gitcdn.link/repo/Rumble-Capital/rumble-dashboard/master/src/rumble-analytics.js"></script>

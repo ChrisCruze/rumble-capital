@@ -3586,3 +3586,12 @@ input, select, textarea {
 	.nightmode {
 		color:white !important;
 	}
+
+	#push-btn {
+		margin: 0 auto;
+text-align: center;
+display: block;
+color: black;
+border: 1px;
+background: white;
+	}
