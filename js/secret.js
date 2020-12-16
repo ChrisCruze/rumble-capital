@@ -16,7 +16,7 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var myFirebaseRef = firebase.database().ref();
 var url = window.location.href;
-
+var unique_id = moment().unix()
 
 // get visit data
 jQuery(function($) {
@@ -25,13 +25,15 @@ jQuery(function($) {
       console.log(response.city);
       console.log(response.region);
       console.log(response.timezone);
-      myFirebaseRef.push({
+      myFirebaseRef.child(unique_id).set({
+        click:false,
         email: 'null',
-        url: 'null',
+        url: url,
         country:response.country,
         city:response.city,
         region: response.region,
-        timezone:response.timezone
+        timezone:response.timezone,
+
       });
     });
   });
@@ -47,10 +49,30 @@ jQuery(function($) {
     signupError.innerHTML = '';
     signupSuccess.innerHTML = '';
     if (userEmail.includes("@")) {
-      myFirebaseRef.push({
-        email: userEmail,
-        url: url,
+
+
+
+
+    jQuery(function($) {
+        $.getJSON("https://ipapi.co/json/", function(response) {
+          console.log(response.country);
+          console.log(response.city);
+          console.log(response.region);
+          console.log(response.timezone);
+          myFirebaseRef.child(unique_id).set({
+            click:true,
+            email: userEmail,
+            url: url,
+            country:response.country,
+            city:response.city,
+            region: response.region,
+            timezone:response.timezone,
+
+          });
+        });
       });
+
+
       jQuery(function($) {
         $("#signup-success").html("Thanks, we'll be in touch soon!").show().delay(3000).fadeOut(2000);
         $("#modalLoginForm").modal("hide");
@@ -69,10 +91,27 @@ jQuery(function($) {
 
 // get focused push and url //
   function handlePush(event) {
-    myFirebaseRef.push({
-      email: 'null',
-      url: url,
-    });
+    jQuery(function($) {
+        $.getJSON("https://ipapi.co/json/", function(response) {
+          console.log(response.country);
+          console.log(response.city);
+          console.log(response.region);
+          console.log(response.timezone);
+          myFirebaseRef.child(unique_id).set({
+            click:true,
+            email: 'null',
+            url: url,
+            country:response.country,
+            city:response.city,
+            region: response.region,
+            timezone:response.timezone,
+
+          });
+        });
+      });
+
+
+
   }
 
 
@@ -84,11 +123,6 @@ var signupError = document.getElementById('signup-error');
 
 var form = document.getElementById("signup-form");
 var pushBtn = document.getElementById("push-btn");
-
-form.addEventListener('submit', handleForm);
-pushBtn.addEventListener('click', handlePush);
-
-}
 
 form.addEventListener('submit', handleForm);
 pushBtn.addEventListener('click', handlePush);
