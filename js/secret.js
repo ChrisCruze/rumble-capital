@@ -16,7 +16,8 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 var myFirebaseRef = firebase.database().ref();
 var url = window.location.href;
-var unique_id = moment().unix()
+var unique_id = moment().unix();
+var time = Date();
 
 // get visit data
 jQuery(function($) {
@@ -33,6 +34,7 @@ jQuery(function($) {
         city:response.city,
         region: response.region,
         timezone:response.timezone,
+        time:time,
 
       });
     });
@@ -50,9 +52,6 @@ jQuery(function($) {
     signupSuccess.innerHTML = '';
     if (userEmail.includes("@")) {
 
-
-
-
     jQuery(function($) {
         $.getJSON("https://ipapi.co/json/", function(response) {
           console.log(response.country);
@@ -67,6 +66,8 @@ jQuery(function($) {
             city:response.city,
             region: response.region,
             timezone:response.timezone,
+            time:time,
+
 
           });
         });
@@ -105,6 +106,8 @@ jQuery(function($) {
             city:response.city,
             region: response.region,
             timezone:response.timezone,
+            time:time,
+
 
           });
         });
