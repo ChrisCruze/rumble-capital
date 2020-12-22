@@ -3586,17 +3586,22 @@ input, select, textarea {
 	.nightmode {
 		color:white !important;
 	}
-
 	#push-btn {
     margin: 0 auto;
     text-align: center;
     display: block;
     color: #ffffff;
     border: 1px;
-    background: #c9c9c9;
-    width: 10%;
+    background:#73cc73;
+    width: 15%;
+		font-weight:700;
 
 	}
+
+	a:hover {
+		color:white;
+	}
+
 
 #hook {
 	width:50%;
