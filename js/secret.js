@@ -14,7 +14,7 @@ var firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-var myFirebaseRef = firebase.database().ref("rumble-signup");
+var myFirebaseRef = firebase.database().ref();
 var url = window.location.href;
 var unique_id = moment().unix();
 var time = Date();
