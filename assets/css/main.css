@@ -3606,3 +3606,7 @@ input, select, textarea {
 #hook {
 	width:50%;
 }
+
+#night-assist {
+	color:white !important;
+}
