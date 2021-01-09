@@ -3610,3 +3610,25 @@ input, select, textarea {
 #night-assist {
 	color:white !important;
 }
+
+/*  ***************EDITED PART ****************** */
+/* New Css styling added to the contributor dropdown menu */
+.filter-projects-btn-cont {
+	font-size: 16px;
+	margin-top: -15px;
+	padding-top: 1px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: none;
+	/* padding: 0 !important; */
+
+	box-shadow: none;
+	line-height: 0 !important;
+	border: none;
+
+	float: left;
+	padding: 0px;
+	letter-spacing: 0px;
+}
+
+/*  ***************EDITED PART END ****************** */
