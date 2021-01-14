@@ -3751,6 +3751,8 @@ padding:10px;
 #text1 {
 	font-family:montserrat;
 	color:white;
+	padding-left:25px;
+	padding-right:25px;
 }
 
 .list {
