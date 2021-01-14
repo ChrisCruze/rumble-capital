@@ -3597,7 +3597,7 @@ input, select, textarea {
     color: #ffffff;
     border: 1px;
     background:#4754b7;
-    width: 40%;
+    width: 50%;
 		font-weight:700;
 
 	}
@@ -3609,7 +3609,7 @@ input, select, textarea {
 		color: #ffffff;
 		border: 1px;
 		background:#a71945;
-		width: 40%;
+		width: 50%;
 		font-weight:700;
 		text-transform:uppercase;
 
