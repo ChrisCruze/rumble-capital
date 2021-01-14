@@ -3370,7 +3370,7 @@ input, select, textarea {
 		}
 
 		header {
-			padding-top:180px;
+			padding-top:80px;
 		}
 
 		.rumble-title {
@@ -3426,7 +3426,7 @@ input, select, textarea {
 			.rumble-title {
 				font-size:255px;
 				letter-spacing:6px;
-				margin-top:135px;
+				margin-top:50px;
 			}
 
 		}
@@ -3602,6 +3602,19 @@ input, select, textarea {
 
 	}
 
+	#push-btn1 {
+		margin: 0 auto;
+		text-align: center;
+		display: block;
+		color: #ffffff;
+		border: 1px;
+		background:#a71945;
+		width: 40%;
+		font-weight:700;
+		text-transform:uppercase;
+
+	}
+
 	a:hover {
 		color:white;
 	}
@@ -3733,4 +3746,20 @@ padding:10px;
 
 #text {
 	color:white !important;
+}
+
+#text1 {
+	font-family:montserrat;
+	color:white;
+}
+
+.list {
+	display: inline-block;
+}
+
+.group {
+	display: block;
+margin: 0 auto;
+margin-left: -25px;
+}
 }
