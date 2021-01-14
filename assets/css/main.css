@@ -3632,3 +3632,79 @@ input, select, textarea {
 }
 
 /*  ***************EDITED PART END ****************** */
+
+.text-success, .text-danger {
+  text-align:Center;
+  margin-top:20px;
+  font-size:20px;
+}
+
+.text-success {
+  color:green;
+}
+
+.text-danger {
+  color:red;
+}
+
+.modal-header {
+  border-bottom:0px;
+}
+
+.modal-footer {
+  border-top:0px;
+}
+
+.modal-content {
+  margin-top:60%;
+  background:#191616;
+}
+
+.modal-title {
+  color:#bfa67a !important;
+}
+ #email {
+   background:white;
+   font-family: 'Montserrat';
+   background: white;
+  font-family: 'Montserrat';
+  color:black !important;
+	font-weight: 100;
+	    font-size: 14px;
+
+
+}
+
+#email input {
+  color: black;
+  font-weight: 00;
+  font-size: 18px;
+}
+
+
+ .modal-subtitle {
+   color:white;
+   font-weight:normal;
+   text-transform:none !important;
+   line-height:1.5;
+ }
+
+ #hook {
+   width:25%;
+ }
+
+ .show {
+   margin:0px !important;
+ }
+
+ #push {
+	 margin: 0 auto;
+	     text-align: center;
+	     display: block;
+	     color: #ffffff;
+	     border: 1px;
+	     background: #73cc73;
+	     width: 40%;
+	     font-weight: 700;
+	     letter-spacing: 2px;
+ }
