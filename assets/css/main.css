@@ -3598,9 +3598,16 @@ input, select, textarea {
     border: 1px;
     background:#4754b7;
     width: 50%;
-		font-weight:700;
+		font-weight:100;
+		font-family: 'AFCamberwellOne';
 
+	    font-size: 30px;
+	    letter-spacing: 3px;
 	}
+
+
+
+
 
 	#push-btn1 {
 		margin: 0 auto;
@@ -3610,10 +3617,16 @@ input, select, textarea {
 		border: 1px;
 		background:#a71945;
 		width: 50%;
-		font-weight:700;
+		font-weight:100;
 		text-transform:uppercase;
+		font-family: 'AFCamberwellOne';
 
+
+	    font-size: 30px;
+	    letter-spacing: 3px;
 	}
+
+
 
 	a:hover {
 		color:white;
@@ -3732,6 +3745,7 @@ padding:10px;
 	     width: 40%;
 	     font-weight: 700;
 	     letter-spacing: 2px;
+			 font-family'Montserrat';
  }
 
 .up {
