@@ -3683,19 +3683,97 @@ input, select, textarea {
 
 .modal-footer {
   border-top:0px;
-}
+  margin-top: 6px;
+  width: 60%;
 
+}
+.btn-nothankx{
+	background-color: transparent !important;
+	border:2px solid white !important;
+}
+.privcypolicy{
+color: #fb0000 !important;
+cursor: pointer;
+}
 .modal-content {
-  margin-top:60%;
+  margin-top:5%;
   background:#191616;
 }
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 900px !important;
+    margin: 1.75rem auto;
+}
+}
+.rumblelogo{
+	margin-right: 1rem;
+}
+@media (max-width: 425px){
+	#email {width: 100%;}
+	.modal-footer {width: 100%;}
+	.modal-body{
+		width: 100%;
+    margin: 0px !important;
+    padding: 0px !important;
+	}
+	.modal-title{
+		display: block !important;
+		font-weight: 600 !important;
+letter-spacing: 2px !important;
+font-size: 50px !important;
+	}
+	.rumblelogo{
 
+		width: 50px;
+		height: 40px;
+	}
+
+	}
+
+	@media (max-width: 375px){
+		.modltitle_1{
+			display: block !important;
+		}
+		.modal-title{
+			display: block !important;
+			font-weight: 600 !important;
+	letter-spacing: 2px !important;
+	font-size: 50px !important;
+		}
+		.crossbutton{
+			display: block !important;
+		}
+	}
+.crossbutton{
+   font-weight: 100;
+   font-size: 30px;
+  position: absolute;
+top: 0;
+right: 12px;
+   color: white;
+   margin: 0 !important;
+   cursor: pointer;
+}
+.modltitle_1{
+	margin-top: 5rem;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 1px;
+	margin-bottom: 0px !important;
+	text-transform: none !important;
+	font-weight: 500;
+}
+.modal-bottom-line{
+	margin-top: 0PX;
+	margin-bottom: 0PX;
+}
 .modal-title {
-	color: #fb0000;;
+	color: white;
 font-family: 'AFCamberwellOne';
 font-weight: 700;
-letter-spacing: 2px;
-font-size: 50px;
+letter-spacing: 5px;
+font-size: 70px;
 text-align: center;
 }
  #email {
@@ -3707,9 +3785,17 @@ text-align: center;
 	font-weight: 100;
 	    font-size: 14px;
 padding:10px;
+width: 80%;
+align-self: center;
+justify-self: center;
 
 }
-
+.md-form{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
 #email input {
   color: black;
   font-weight: 00;
