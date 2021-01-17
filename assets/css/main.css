@@ -3696,7 +3696,7 @@ color: #fb0000 !important;
 cursor: pointer;
 }
 .modal-content {
-  margin-top:5%;
+  margin-top:30%;
   background:#191616;
 }
 @media (min-width: 576px){
